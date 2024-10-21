@@ -1,9 +1,13 @@
 [tool.poetry]
 name = "python-template"
 version = "0.1.0"
-description = "A "
+description = "A template for future python projects"
 authors = ["Jonas Gerber <73141623+Traenqui@users.noreply.github.com>"]
 readme = "README.md"
+license = "MIT"
+homepage = "https://github.com/Traenqui/python-template"
+repository = "https://github.com/Traenqui/python-template"
+keywords = ["template"]
 
 [tool.poetry.dependencies]
 python = "^3.12"
