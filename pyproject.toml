@@ -19,7 +19,19 @@ python-template = "python_template.console:main"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.3"
+coverage = { version = "^7.6.4", extras = ["toml"] }
+pytest-cov = "^5.0.0"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.coverage.paths]
+source = ["src", "*/site-packages"]
+
+[tool.coverage.run]
+branch = true
+source = ["python_template"]
+
+[tool.coverage.report]
+show_missing = true
