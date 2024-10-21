@@ -21,6 +21,7 @@ python-template = "python_template.console:main"
 pytest = "^8.3.3"
 coverage = { version = "^7.6.4", extras = ["toml"] }
 pytest-cov = "^5.0.0"
+pytest-mock = "^3.14.0"
 
 [build-system]
 requires = ["poetry-core"]
