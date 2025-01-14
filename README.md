@@ -9,3 +9,5 @@ nox -rs black
 ```
 
 Test t branch
+
+Using github actions for auto releases
