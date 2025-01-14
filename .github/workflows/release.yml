@@ -24,7 +24,7 @@ jobs:
       - name: get-package-version
         id: package-version
         run: |
-          LF_VERSION=$(grep '^version =' pyproject.toml | sed 's/version = "//;s/"$//')
+          LF_VERSION=$(grep '^version =' pyproject.toml | sed 's/version = "\(.*\)"/\1/')
           echo "current-version=$LF_VERSION" >> "$GITHUB_OUTPUT"
 
      # create release info and push it upstream
