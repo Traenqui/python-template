@@ -49,6 +49,7 @@ jobs:
 
       - name: bump version
         run: |
+          rm package.json
           poetry version ${{ steps.changelog.outputs.version }}
           git add pyproject.toml
           git commit -m "bump up ${{ github.event.inputs.version }} version from workflow"
