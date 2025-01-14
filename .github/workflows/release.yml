@@ -34,7 +34,7 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           #version-file: './package.json,./package-lock.json,./src/config/app.json'
-          version-file: './package.json,./package-lock.json'
+          version-file: './pyproject.toml'
           git-branch: 'release-from-${{ github.sha }}'
           skip-git-pull: true
 
