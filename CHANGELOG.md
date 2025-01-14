@@ -1,4 +1,13 @@
-# 0.1.0 (2025-01-14)
+# [0.2.0](https://github.com/Traenqui/python-template/compare/v0.1.0...v0.2.0) (2025-01-14)
+
+
+### Features
+
+* **amazing:** Test ([4358b06](https://github.com/Traenqui/python-template/commit/4358b061a6e0de3f45809e5c70560d3f5df871df))
+
+
+
+# [0.1.0](https://github.com/Traenqui/python-template/compare/965eb1a5b9738cff1d444c82a0d763f1b1a2cc62...v0.1.0) (2025-01-14)
 
 
 ### Bug Fixes
