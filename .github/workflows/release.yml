@@ -45,6 +45,7 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           #version-file: './package.json,./package-lock.json,./src/config/app.json'
           git-branch: 'release-from-${{ github.sha }}'
+          skip-version-file: true
           skip-git-pull: true
 
       - name: bump version
