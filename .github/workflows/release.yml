@@ -53,7 +53,7 @@ jobs:
           poetry version ${{ steps.changelog.outputs.version }}
           git add pyproject.toml
           git commit -m "bump up ${{ github.event.inputs.version }} version from workflow"
-          git push
+          git push --set-upstream origin release-from-${{ github.sha }}
 
       # create PR using GitHub CLI
       - name: create PR with release info
