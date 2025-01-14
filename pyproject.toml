@@ -1,38 +1,43 @@
+version = "0.1.0"
+
 [tool.poetry]
 name = "python-template"
 version = "0.1.0"
 description = "A template for future python projects"
-authors = ["Jonas Gerber <73141623+Traenqui@users.noreply.github.com>"]
+authors = [ "Jonas Gerber <73141623+Traenqui@users.noreply.github.com>" ]
 readme = "README.md"
 license = "MIT"
 homepage = "https://github.com/Traenqui/python-template"
 repository = "https://github.com/Traenqui/python-template"
-keywords = ["template"]
+keywords = [ "template" ]
 
-[tool.poetry.dependencies]
-python = "^3.12"
-click = "^8.1.7"
-requests = "^2.32.3"
+  [tool.poetry.dependencies]
+  python = "^3.12"
+  click = "^8.1.7"
+  requests = "^2.32.3"
 
-[tool.poetry.scripts]
-python-template = "python_template.console:main"
+  [tool.poetry.scripts]
+  python-template = "python_template.console:main"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.3"
-coverage = { version = "^7.6.4", extras = ["toml"] }
 pytest-cov = "^5.0.0"
 pytest-mock = "^3.14.0"
 
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+  [tool.poetry.group.dev.dependencies.coverage]
+  version = "^7.6.4"
+  extras = [ "toml" ]
 
 [tool.coverage.paths]
-source = ["src", "*/site-packages"]
+source = [ "src", "*/site-packages" ]
 
 [tool.coverage.run]
 branch = true
-source = ["python_template"]
+source = [ "python_template" ]
 
 [tool.coverage.report]
 show_missing = true
+
+[build-system]
+requires = [ "poetry-core" ]
+build-backend = "poetry.core.masonry.api"
