@@ -43,14 +43,13 @@ jobs:
         uses: TriPSs/conventional-changelog-action@v6
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          #version-file: './package.json,./package-lock.json,./src/config/app.json'
+          version-file: './pyproject.toml'
           git-branch: 'release-from-${{ github.sha }}'
           skip-version-file: true
           skip-git-pull: true
 
       - name: bump version
         run: |
-          rm package.json
           poetry version ${{ steps.changelog.outputs.version }}
           git add pyproject.toml
           git commit -m "bump up ${{ github.event.inputs.version }} version from workflow"
