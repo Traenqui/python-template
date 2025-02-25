@@ -18,6 +18,9 @@ jobs:
       id-token: write
       contents: write
 
+    outputs:
+      released: ${{ steps.release.outputs.released }}
+
     steps:
       # Note: We checkout the repository at the branch that triggered the workflow
       # with the entire history to ensure to match PSR's release branch detection
@@ -92,5 +95,5 @@ jobs:
 
   deploy:
     needs: release
-    if: needs.release.result == 'success' && steps.release.outputs.released == 'true'
+    if: needs.release.outputs.released == 'true'
     uses: ./.github/workflows/deploy_prod.yml
