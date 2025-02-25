@@ -2,6 +2,19 @@
 
 <!-- version list -->
 
+## v0.3.4 (2025-02-25)
+
+### Bug Fixes
+
+- Test new workflow
+  ([`0c05d47`](https://github.com/Traenqui/python-template/commit/0c05d47946e6f22539edede321ac52b9e362b1aa))
+
+### Chores
+
+- Blib
+  ([`15c16b1`](https://github.com/Traenqui/python-template/commit/15c16b150981df486a1f1e9ed7be8e1346ef4ef4))
+
+
 ## v0.3.3 (2025-02-25)
 
 ### Performance Improvements
