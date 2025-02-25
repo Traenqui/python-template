@@ -90,9 +90,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           tag: ${{ steps.release.outputs.tag }}
 
-      - name: Trigger Deployment Workflow
-        if: steps.release.outputs.released == 'true'
-        run: |
-          gh workflow run "deploy_prod.yml"
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  deploy:
+    needs: release
+    if: needs.release.result == 'success' && steps.release.outputs.released == 'true'
+    uses: ./.github/workflows/deploy_prod.yml

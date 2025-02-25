@@ -1,8 +1,11 @@
 name: Deployment (production)
 
 on:
-  workflow_call:
   workflow_dispatch:
+  workflow_call:
+  release:
+    types:
+      - published
 
 
 jobs:
