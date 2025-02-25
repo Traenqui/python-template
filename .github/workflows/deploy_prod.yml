@@ -1,6 +1,7 @@
 name: Deployment (production)
 
 on:
+  workflow_call:
   workflow_dispatch:
 
 
