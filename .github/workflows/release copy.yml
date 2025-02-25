@@ -81,3 +81,4 @@ jobs:
           name: ${{ steps.changelog.outputs.tag }}
           body: ${{ steps.changelog.outputs.clean_changelog }}
           
+git checkout -b release/v$(semantic-release version --print)
