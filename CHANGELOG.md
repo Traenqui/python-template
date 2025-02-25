@@ -2,6 +2,22 @@
 
 <!-- version list -->
 
+## v0.3.2 (2025-02-25)
+
+### Bug Fixes
+
+- Workflow update
+  ([`37a1e26`](https://github.com/Traenqui/python-template/commit/37a1e26de8b0bee2b1aff20b6c4d9b87a8b60ee7))
+
+### Continuous Integration
+
+- Update
+  ([`0c8472b`](https://github.com/Traenqui/python-template/commit/0c8472b623dd534d196ba51c6aad5c1bdc39f797))
+
+- Update workflow
+  ([`83d64ef`](https://github.com/Traenqui/python-template/commit/83d64ef63bce4b6860157c7e9c19c9e1ac80d859))
+
+
 ## v0.3.1 (2025-02-25)
 
 ### Bug Fixes
