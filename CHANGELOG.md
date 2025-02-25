@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v0.3.3 (2025-02-25)
+
+### Performance Improvements
+
+- Added workflow call
+  ([`d95a897`](https://github.com/Traenqui/python-template/commit/d95a897cd3c4dc4c7bd05f1745fbdf78a398dfdb))
+
+
 ## v0.3.2 (2025-02-25)
 
 ### Bug Fixes
