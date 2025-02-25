@@ -1,11 +1,16 @@
 name: Release
+
 on:
-  push:
+  pull_request:
+    types:
+      - opened
+      - synchronize
     branches:
-    - master
+      - master
 
 jobs:
   release:
+    if: github.event.pull_request.base.ref == 'master' && github.event.pull_request.head.ref == 'develop'
     runs-on: ubuntu-latest
     concurrency:
       group: ${{ github.workflow }}-release-${{ github.ref_name }}
@@ -14,13 +19,22 @@ jobs:
     permissions:
       id-token: write
       contents: write
+      id-token: write
 
     steps:
       - name: Setup | Checkout Repository on Release Branch
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-  
+
+      - name: Install Dependencies
+        run: |
+          pip install python-semantic-release
+
+      - name: Get Next Version
+        id: version
+        run: echo "NEXT_VERSION=$(semantic-release version --print)" >> $GITHUB_ENV
+
       - name: Action | Semantic Version Release
         id: release
         # Adjust tag with desired version if applicable.
