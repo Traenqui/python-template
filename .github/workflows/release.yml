@@ -17,8 +17,8 @@ jobs:
       cancel-in-progress: false
 
     permissions:
-      id-token: write
       contents: write
+      pull-requests: write
       id-token: write
 
     steps:
