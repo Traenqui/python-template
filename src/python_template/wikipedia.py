@@ -6,7 +6,7 @@ API_URL = "https://{language}.wikipedia.org/api/rest_v1/page/random/summary"
 
 
 def random_page(language="en"):
-    """_summary_
+    """Get a random Page
 
     Args:
         language (str, optional): _description_. Defaults to "en".
