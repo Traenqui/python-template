@@ -6,6 +6,17 @@ API_URL = "https://{language}.wikipedia.org/api/rest_v1/page/random/summary"
 
 
 def random_page(language="en"):
+    """_summary_
+
+    Args:
+        language (str, optional): _description_. Defaults to "en".
+
+    Raises:
+        click.ClickException: _description_
+
+    Returns:
+        _type_: _description_
+    """
     url = API_URL.format(language=language)
 
     try:
