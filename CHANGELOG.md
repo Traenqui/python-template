@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v0.3.1 (2025-02-25)
+
+### Bug Fixes
+
+- Update wikipedia.py
+  ([`4ca78ff`](https://github.com/Traenqui/python-template/commit/4ca78ff2cef00cdbc32ce0da7d682200001faf16))
+
+
 ## v0.3.0 (2025-02-25)
 
 ### Bug Fixes
