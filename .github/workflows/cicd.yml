@@ -3,7 +3,9 @@ name: Continuous Delivery
 on:
   push:
     branches:
-      - release
+      - release/*
+    tags:
+      - "v*"
 
 jobs:
   release:
